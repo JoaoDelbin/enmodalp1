@@ -1,0 +1,13 @@
+/* global */
+@import "./global/global.css";
+
+/* contagem e oferta*/
+@import "./contagem/contagem.css";
+@import "./contagem/oferta.css";
+/* utilidades */
+@import "./utilidades/cores.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/utilidades.css";
+
+/* formação */
+@import "./formacao/formacao.css"

@@ -1,0 +1,11 @@
+.oferta {
+  max-width: 600px;
+  font-weight: 100;
+  line-height: 0.9;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  
+}

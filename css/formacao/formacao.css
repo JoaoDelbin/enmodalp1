@@ -1,0 +1,31 @@
+.formacao {
+  
+}
+
+.formacao-bg {
+  background-image: url("/imagens/formacao.png");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0 -230px 100px #111111;
+
+}
+
+.formacao-conteudo {
+  padding-top: 250px;
+  max-width: 600px;
+  padding-bottom: 40px;
+}
+
+.logo-enmoda {
+  max-width: 50%;
+  max-height: 30px;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 800px) {
+  .formacao-conteudo {
+    max-width: 500px;
+  }
+}

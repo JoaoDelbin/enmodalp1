@@ -5,7 +5,9 @@
 .font-1-xxl-sb {
   font: 800 4rem/1.125 "Poppins", sans-serif;
 }
-
+.font-1-xxl-lh {
+  font: 600 4rem/0.8 "Poppins", sans-serif;
+}
 .font-1-xxl {
   font: 600 4rem/1.125 "Poppins", sans-serif;
 }
@@ -15,11 +17,11 @@
 }
 
 .font-1-xl {
-  font: 600 2rem/1.25 "Poppins", sans-serif;
+  font: 400 3rem/1.25 "Poppins", sans-serif;
 }
 
 .font-1-l {
-  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+  font: 400 1.5rem/1 "Poppins", sans-serif;
 }
 
 .font-1-m,.font-1-m-b  {
@@ -42,14 +44,23 @@
     }
 @media (max-width: 800px) {
 
-  .font-1-xxl, .font-1-xxl-sb {
+  .font-1-xxl, .font-1-xxl-sb, .font-1-xxl-lh  {
     font-size: 2.5rem;
   }
   .font-1-xl, .font-1-xl-lh {
     font-size: 2rem ;
   }
+  .font-1-l {
+    font-size: 1.2rem
+  }
   .font-1-m,.font-1-m-b {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .font-1-l {
+    font-size: 1rem
   }
 }
 

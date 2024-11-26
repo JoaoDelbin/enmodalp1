@@ -1,0 +1,102 @@
+.curso-bg {
+  background-color: #111;
+}
+
+.titulo-curso {
+  padding-top: 120px;
+}
+
+.dec-2 p {
+  position: relative; /* Para posicionar a bolinha de forma relativa ao texto */
+  padding-left: 25px; /* Para dar espaço para a bolinha */
+}
+
+.dec-2 p::after {
+  content: "";
+  position: absolute;
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%);
+  width: 10px; 
+  height: 10px; 
+  border-radius: 50%; 
+  background-color: #fff; 
+}
+
+.video-curso {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  margin-top: 20px; 
+}
+
+.video-curso iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.curso-img {
+  position: relative;
+}
+
+.curso-img img {
+  position: absolute;
+  left: 800px;
+  top: -130px; /* Ajuste conforme necessário para subir a imagem */
+  z-index: 1; /* Para garantir que a imagem fique acima de outros elementos */
+}
+
+.curso-botao {
+  position: absolute; 
+  left: 100px; 
+  top: -30px;
+  z-index: 1; 
+}
+
+
+@media (max-width: 1600px) {
+  .curso-img img {
+
+    left: 700px;
+    top: -130px; 
+  
+  }
+  
+}
+
+@media (max-width: 1300px) {
+  .curso-img img {
+
+    left: 650px;
+    top: -130px; 
+  
+  }
+  
+}
+
+@media (max-width: 800px) {
+  .curso-img img {
+    left: 400px;
+    top: -130px; 
+  }
+}
+
+@media (max-width: 600px) {
+  .curso-botao {
+    font-size: 1.3rem;
+    left: 20px;
+    right: 20px;
+  }
+  .curso-img img {
+    left: 400px;
+    width: 250px;
+  }
+}
+@media (max-width: 400px) {
+  .curso-img img {
+    left: 200px;
+    top: -130px; 
+    width: 250px;
+    height: auto;
+  }
+}

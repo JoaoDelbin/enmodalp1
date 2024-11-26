@@ -1,10 +1,14 @@
 .container {
-  max-width: 1600px;
+  max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
+}
+
+.margem-baixo-menor {
+  margin-bottom: 5px;
 }
 
 .margem-baixo {
@@ -13,4 +17,20 @@
 
 .margem-baixo-maior {
   margin-bottom: 20px;
+}
+
+.botao {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 10px 20px;
+  background-color: #ff2c64; 
+  text-decoration: none; 
+  border-radius: 5px;
+  transition: background-color 0.3s; 
+}
+
+.botao:hover {
+  background-color: #ee1d55;
 }

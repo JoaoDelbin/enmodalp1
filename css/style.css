@@ -10,4 +10,10 @@
 @import "./utilidades/utilidades.css";
 
 /* formação */
-@import "./formacao/formacao.css"
+@import "./formacao/formacao.css";
+
+/* metodo */
+@import "./metodo/metodo.css";
+
+/* curso */
+@import "./curso/curso.css";

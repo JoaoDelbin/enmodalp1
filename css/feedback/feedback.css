@@ -1,0 +1,16 @@
+.feedback-bg {
+  background-color: #fff;
+  padding: 40px;
+}
+
+
+.container-feedback article{
+  text-align: center;
+
+}
+
+@media (max-width: 400px) {
+  .feedback-bg {
+    padding: 20px;
+  }
+}

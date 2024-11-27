@@ -29,8 +29,17 @@
   text-decoration: none; 
   border-radius: 5px;
   transition: background-color 0.3s; 
+  position: relative;
+  white-space: nowrap;
 }
 
 .botao:hover {
   background-color: #ee1d55;
+}
+
+@media (max-width: 400px) {
+  .botao {
+    padding: 5px 10px;
+  }
+  
 }

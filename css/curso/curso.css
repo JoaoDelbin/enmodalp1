@@ -8,8 +8,8 @@
 }
 
 .dec-2 p {
-  position: relative; /* Para posicionar a bolinha de forma relativa ao texto */
-  padding-left: 25px; /* Para dar espaço para a bolinha */
+  position: relative; 
+  padding-left: 25px; 
 }
 
 .dec-2 p::after {
@@ -32,7 +32,8 @@
 }
 
 .video-curso iframe {
-  max-width: 100%;
+  width: 800px;
+  height: 450px;
   border-radius: 10px;
 }
 
@@ -43,8 +44,8 @@
 .curso-img img {
   position: absolute;
   left: 800px;
-  top: -130px; /* Ajuste conforme necessário para subir a imagem */
-  z-index: 1; /* Para garantir que a imagem fique acima de outros elementos */
+  top: -130px;
+  z-index: 1; 
 }
 
 .curso-botao {
@@ -54,8 +55,22 @@
   z-index: 1; 
 }
 
+.cursor-img {
+  position: absolute; 
+  left: 840px; 
+  top: 1245px;
+  width: 50px;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
 
-@media (max-width: 1600px) {
+
+@media (max-width: 1700px) {
+  .cursor-img {
+    left: 600px; 
+    top: 1245px;
+  }
   .curso-img img {
 
     left: 700px;
@@ -66,6 +81,10 @@
 }
 
 @media (max-width: 1300px) {
+  .cursor-img {
+    left: 500px; 
+    top: 1245px;
+  }
   .curso-img img {
 
     left: 650px;
@@ -74,8 +93,17 @@
   }
   
 }
+@media (max-width: 1120px) {
+  .cursor-img {
+    left: 500px; 
+    top: 1280px;
+ } }
 
 @media (max-width: 800px) {
+  .cursor-img {
+    left: 500px; 
+    top: 1080px;
+ }
   .curso-img img {
     left: 400px;
     top: -130px; 
@@ -83,6 +111,10 @@
 }
 
 @media (max-width: 600px) {
+  .cursor-img {
+    left: 400px; 
+    top: 1140px;
+ }
   .curso-botao {
     font-size: 1.3rem;
     left: 20px;
@@ -93,7 +125,25 @@
     width: 250px;
   }
 }
+
+@media (max-width: 420px) {
+    .cursor-img {
+      left: 200px; 
+      top: 1265px;
+   }
+   .video-curso iframe {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+  }
+ } 
+
 @media (max-width: 400px) {
+  .cursor-img {
+    width: 40px;
+    left: 40px; 
+    top: 1220px;
+ }
   .curso-img img {
     left: 200px;
     top: -130px; 
@@ -101,3 +151,4 @@
     height: auto;
   }
 }
+

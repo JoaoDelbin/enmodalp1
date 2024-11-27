@@ -7,17 +7,21 @@
   text-align: center;
 }
 
+
+/* mais de */
+
 .maisde-bg {
   background-color: #111;
 }
 
 .container-maisde {
+  justify-content: center;
   border-radius: 4px;
-  padding: 40px 40px;
+  padding: 40px 80px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 50px;
 }
 
 .maisde-item {
@@ -25,7 +29,30 @@
   display: flex ;
   align-items: center;
   justify-content: center;
-  border: 1px solid #6b6b6b; 
+  /* border: 1px solid #6b6b6b;  */
   border-radius: 10px; 
+  
+  box-shadow: 0 0 5px rgb(206, 61, 61), /* Sombra padrão */
+
+              0 0 10px rgb(241, 31, 31); /* Sombra difusa para o efeito de luz */
 }
 
+@media (max-width:800px) {
+  .container-maiorbr article, .container-feedback {
+    line-height: 0.8;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-maisde {
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;}
+
+    .maisde-item article  {
+      font-size: 1.5rem;
+    }
+    .maisde-item {
+      padding: 5px 5px;
+    }
+  }

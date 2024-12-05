@@ -1,6 +1,6 @@
 // Define a data e hora de término da contagem regressiva
 
-const countdownDate = new Date("Dec 31, 2024 23:59:59").getTime();
+const countdownDate = new Date("Dec 5, 2024 23:59:59").getTime();
 
 
 // Atualiza a contagem regressiva a cada segundo
@@ -42,3 +42,4 @@ const x = setInterval(function() {
 
 
 }, 1000);
+

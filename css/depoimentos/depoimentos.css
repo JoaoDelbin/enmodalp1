@@ -1,0 +1,45 @@
+.depoimentos-bg {
+  background-color: #fff;
+}
+.container-botao {
+  padding-top: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.botao-depoimentos {
+  position: absolute;
+}
+
+.botao-depoimentos::before {
+  position: absolute;
+  content: "";
+  display: flex;
+  width: 80px;
+  height: 80px;
+  background-image: url('https://cdn.pixabay.com/photo/2013/07/12/12/56/cursor-146588_960_720.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10% 85%;
+}
+
+@media (max-width: 600px){
+  .container-botao {
+    padding-top: 20px;}
+  .botao-depoimentos::before {
+    width: 50px;
+    height: 50px;
+    margin: 6% 83%;
+  }
+  .botao-depoimentos {
+    font-size: 1.3rem;
+    
+  }
+  }
+
+@media (max-width: 400px){
+  .botao-depoimentos::before {
+    margin: 6% 88%;
+  }
+  }

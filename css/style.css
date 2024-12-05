@@ -23,3 +23,10 @@
 
 /* feedback */
 @import "./feedback/feedback.css";
+
+/* depoimentos videos */
+@import "./depoimentos/depoimentos.css";
+/* modulos */
+@import "./modulos/modulos.css";
+/* beneficios */
+@import "./beneficios/beneficios.css";

@@ -12,17 +12,19 @@
   text-align: center;
 }
 
-.professora-video {
+.professora-video,
+.professora-video2 {
   position: relative;
   max-width: 640px;
   margin: 0 auto;
   padding: 20px 20px;
 }
 
-.video-thumbnail {
+.video-thumbnail,
+.video-thumbnail2 {
   width: 100%;
   aspect-ratio: 16/9;
-  background-image: url('https://img.youtube.com/vi/2-6pLqW8QGU/hqdefault.jpg'); /* Miniatura do novo vídeo */
+  background-image: url("https://img.youtube.com/vi/2-6pLqW8QGU/hqdefault.jpg"); /* Miniatura do novo vídeo */
   background-size: cover;
   background-position: center;
   cursor: pointer;
@@ -31,7 +33,8 @@
   overflow: hidden;
 }
 
-.overlay {
+.overlay,
+.overlay2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -40,7 +43,8 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.play-icon {
+.play-icon,
+.play-icon2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,16 +52,16 @@
   width: 40px;
   height: 40px;
   background-color: white;
-  clip-path: polygon(0% 0%, 100% 50%, 0% 100%); 
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 }
 
-.video {
+.video,
+.video2 {
   display: none;
   width: 100%;
   height: 315px;
   border-radius: 10px;
 }
-
 
 /* professor 1 */
 
@@ -75,17 +79,16 @@
 }
 
 .professor img {
-  width:100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
-  
 }
 
 .professor h3 {
   padding-bottom: 10px;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .professor {
     padding-top: 40px;
     display: grid;
@@ -100,13 +103,7 @@
   }
 }
 
-
-
-
-
-
-
-@media (max-width:600px) {
+@media (max-width: 600px) {
   .titulo-professores {
     padding-top: 80px;
   }
@@ -114,4 +111,15 @@
     width: 300px;
     order: -1; /* Coloca a imagem acima do texto */
   }
+  .professor p  {
+    text-align: center;
+  }
+  .professor h3 {
+    display: none;
+  }
+  .container-professores {
+    align-items: center;
+    justify-content: center;
+  }
+  
 }

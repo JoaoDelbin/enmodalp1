@@ -24,21 +24,6 @@
   background-color: #fff; 
 }
 
-.video-curso {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  margin-top: 2.5rem; 
-}
-
-.video-curso iframe {
-  border-color: #000;
-  width: 800px;
-  aspect-ratio: 16/9;
-  border-radius: 10px;
-  object-fit: cover;
-  cursor: pointer;
-}
 
 
 .curso-aprender {
@@ -91,10 +76,6 @@
 
 }
 @media (max-width: 1000px) {
-  .video-curso video {
-    width: 500px;
-    height: 300px;
-  }
   .container-imagem img {
     max-width: 200px;
     margin-left: 50%;

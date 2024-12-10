@@ -17,7 +17,6 @@
   background-color: #fff;
   border: none;
   cursor: pointer;
-  font-size: 16px;
   font-weight: bold;
   display: flex;
   position: relative;
@@ -30,11 +29,15 @@
   }
 
   .faq-question::before {
-    content: '▶';
-    font-size: 12px;
-    color: black;
-    margin-right: 10px;
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('https://images.vexels.com/media/users/3/136984/isolated/lists/0f7b26b01932f7912bd4351d2286b2af-seta-direita-grossa-1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: transform 0.3s ease;
+    margin-right: 10px;
   }
 
   .faq-toggle:checked + .faq-question::before {

@@ -1,0 +1,38 @@
+.pmenos-bg {
+  padding: 40px;
+}
+
+.padding{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.carreira-bg {
+  background-color: #111;
+}
+.carreira-bg div article {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.oferta-texto {
+  padding-top: 40px;
+  text-align: center;
+}
+
+.texto-pmenos {
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width:608px) {
+  .carreira-bg div article {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .padding-top{
+    padding-top: 60px;
+  }
+}
+

@@ -1,0 +1,61 @@
+.nova-contagem {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nova-contagem-bg {
+  background-color: #000;
+}
+.nova-contagem-bg article{
+  padding-top: 40px;
+  text-align: center;
+}
+
+
+#nova-timer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 10px;
+}
+
+.nova-time-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nova-label {
+  margin-top: 0.3rem;
+}
+
+.nova-borda-timer {
+  background-color: #ff2c64;
+  padding: 8px 15px;
+  border-radius: 4px;
+  width: 70px;
+}
+
+@media (max-width: 800px) {
+  .nova-label {
+    margin-top: 0.2rem;
+  }
+  #nova-timer {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #nova-timer {
+    gap: 0.4rem;
+  }
+  .nova-borda-timer {
+    padding: 0.5rem 15px;
+    width: 50px;
+  }
+}

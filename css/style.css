@@ -3,6 +3,7 @@
 
 /* contagem e oferta*/
 @import "./contagem/contagem.css";
+@import "./contagem/contagem2.css";
 @import "./contagem/oferta.css";
 /* utilidades */
 @import "./utilidades/cores.css";
@@ -36,6 +37,8 @@
 @import "./certificado/certificado.css";
 /* professores */
 @import "./professores/professores.css";
-/* estilo dos videos */
-@import "./videos/videos.css";
-/*  */
+
+/* carreira e oferta 48hr*/
+@import "./carreira/carreira.css";
+/* perguntas */
+@import "./perguntas/perguntas.css"

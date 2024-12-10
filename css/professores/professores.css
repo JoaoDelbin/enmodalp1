@@ -111,7 +111,7 @@
     padding-top: 80px;
   }
   .professor img {
-    width: 360px;
+    width: 300px;
     order: -1; /* Coloca a imagem acima do texto */
   }
 }

@@ -124,3 +124,10 @@
     }
   }
 
+  @media (max-width: 380px) {
+    .container-imagem img { 
+      margin-left: 35%;
+      margin-top: -30%; 
+    }
+  }
+

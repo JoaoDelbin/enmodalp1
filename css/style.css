@@ -30,3 +30,12 @@
 @import "./modulos/modulos.css";
 /* beneficios */
 @import "./beneficios/beneficios.css";
+/* ferramentas */
+@import "./ferramentas/ferramentas.css";
+/* certificado */
+@import "./certificado/certificado.css";
+/* professores */
+@import "./professores/professores.css";
+/* estilo dos videos */
+@import "./videos/videos.css";
+/*  */

@@ -108,7 +108,8 @@
     padding-top: 80px;
   }
   .professor img {
-    width: 300px;
+    align-items: center;
+    justify-content: center;
     order: -1; /* Coloca a imagem acima do texto */
   }
   .professor p  {
@@ -118,8 +119,10 @@
     display: none;
   }
   .container-professores {
+
     align-items: center;
     justify-content: center;
   }
   
 }
+

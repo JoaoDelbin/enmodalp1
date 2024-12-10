@@ -1,6 +1,6 @@
 // Define a data e hora de término da contagem regressiva
 
-const countdownDate = new Date("Dec 5, 2024 23:59:59").getTime();
+const countdownDate = new Date("Dec 25, 2024 23:59:59").getTime();
 
 
 // Atualiza a contagem regressiva a cada segundo
@@ -66,7 +66,7 @@ function playVideo2() {
 //   contaagem 2 final do site 
 
 // Define a data e hora de término da nova contagem regressiva
-const novaCountdownDate = new Date("Dec 5, 2024 23:59:59").getTime();
+const novaCountdownDate = new Date("Dec 25, 2024 23:59:59").getTime();
 
 // Atualiza a contagem regressiva a cada segundo
 const y = setInterval(function() {
@@ -89,6 +89,40 @@ const y = setInterval(function() {
     document.getElementById("nova-seconds").innerHTML = String(novaSeconds).padStart(2, '0');
 
 }, 1000);
+
+// 
+// 
+// 
+
+function playVideo3() {
+    const iframe = document.getElementById('video3');
+    const videoUrl = "https://www.youtube.com/embed/NV4TId1dDec?autoplay=1";
+    iframe.src = videoUrl;
+    iframe.style.display = 'block'; 
+    document.querySelector('.video-thumbnail3').style.display = 'none'; 
+  }
+  
+function playVideo4() {
+    const iframe = document.getElementById('video4');
+    const videoUrl = "https://www.youtube.com/embed/gP2gc39oPwM?autoplay=1";
+    iframe.src = videoUrl;
+    iframe.style.display = 'block'; 
+    document.querySelector('.video-thumbnail4').style.display = 'none'; 
+  }
+
+function playVideo5() {
+    const iframe = document.getElementById('video5');
+    const videoUrl = "https://www.youtube.com/embed/jfA-ZXq7RpM?autoplay=1";
+    iframe.src = videoUrl;
+    iframe.style.display = 'block'; 
+    document.querySelector('.video-thumbnail5').style.display = 'none'; 
+  }
+
+// carrossel
+
+
+
+
 
 
 

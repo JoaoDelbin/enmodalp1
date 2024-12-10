@@ -1,6 +1,82 @@
 .depoimentos-bg {
   background-color: #fff;
 }
+
+.carrossel-container {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carrossel {
+  display: flex;
+  gap: 40px;
+  padding: 0 20px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+}
+
+
+
+.bicicletas-lista li {
+  flex: 1;
+  min-width: 280px;
+}
+
+.bicicletas-lista a {
+  display: block;
+}
+
+
+/* videos */
+.dados {
+  text-align: center;
+  padding-top: -200px;
+}
+
+.video-thumbnail3,
+.video-thumbnail4,
+.video-thumbnail5 {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-image: url("https://img.youtube.com/vi/NV4TId1dDec/hqdefault.jpg"); /* Miniatura do novo vídeo */
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-thumbnail4 {
+  background-image: url("https://img.youtube.com/vi/gP2gc39oPwM/hqdefault.jpg"); /* Miniatura do novo vídeo */
+}
+
+.video-thumbnail5 {
+  background-image: url("https://img.youtube.com/vi/jfA-ZXq7RpM/hqdefault.jpg"); /* Miniatura do novo vídeo */
+}
+
+.depoimento-video1,
+.depoimento-video2,
+.depoimento-video5 {
+  position: relative;
+  max-width: 640px;
+  min-width: 400px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.video3,
+.video4,
+.video5 {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+}
+
 .container-botao {
   padding-top: 40px;
   align-items: center;
@@ -18,15 +94,16 @@
   display: flex;
   width: 80px;
   height: 80px;
-  background-image: url('https://cdn.pixabay.com/photo/2013/07/12/12/56/cursor-146588_960_720.png');
+  background-image: url("https://cdn.pixabay.com/photo/2013/07/12/12/56/cursor-146588_960_720.png");
   background-size: contain;
   background-repeat: no-repeat;
   margin: 10% 85%;
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   .container-botao {
-    padding-top: 20px;}
+    padding-top: 20px;
+  }
   .botao-depoimentos::before {
     width: 50px;
     height: 50px;
@@ -34,12 +111,11 @@
   }
   .botao-depoimentos {
     font-size: 1.3rem;
-    
   }
-  }
+}
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
   .botao-depoimentos::before {
     margin: 6% 88%;
   }
-  }
+}

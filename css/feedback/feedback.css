@@ -3,10 +3,8 @@
   padding: 40px;
 }
 
-
-.container-feedback article{
+.container-feedback article {
   text-align: center;
-
 }
 
 @media (max-width: 400px) {

@@ -1,5 +1,6 @@
 .depoimentos-bg {
   background-color: #fff;
+  padding-bottom: 140px;
 }
 
 .carrossel-container {
@@ -34,7 +35,7 @@
 /* videos */
 .dados {
   text-align: center;
-  padding-top: -200px;
+  margin-top: -180px;
 }
 
 .video-thumbnail3,
@@ -64,9 +65,9 @@
 .depoimento-video5 {
   position: relative;
   max-width: 640px;
-  min-width: 400px;
+  min-width: 330px;
   margin: 0 auto;
-  padding: 20px 20px;
+ 
 }
 
 .video3,
@@ -78,7 +79,7 @@
 }
 
 .container-botao {
-  padding-top: 40px;
+  padding-top: 80px;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -101,8 +102,12 @@
 }
 
 @media (max-width: 600px) {
+  .depoimentos-bg {
+    
+    padding-bottom: 80px;
+  }
   .container-botao {
-    padding-top: 20px;
+    padding-top: 60px;
   }
   .botao-depoimentos::before {
     width: 50px;

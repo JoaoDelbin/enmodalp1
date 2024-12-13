@@ -1,6 +1,6 @@
 // Define a data e hora de término da contagem regressiva
 
-const countdownDate = new Date("Dec 25, 2024 23:59:59").getTime();
+const countdownDate = new Date("Dec 16, 2024 23:59:59").getTime();
 
 
 // Atualiza a contagem regressiva a cada segundo
@@ -65,29 +65,43 @@ function playVideo2() {
 
 //   contaagem 2 final do site 
 
-// Define a data e hora de término da nova contagem regressiva
-const novaCountdownDate = new Date("Dec 25, 2024 23:59:59").getTime();
+const countdownDuration = 48 * 60 * 60 * 1000; // 48 horas em milissegundos
 
-// Atualiza a contagem regressiva a cada segundo
+// Verifica se já existe um registro no localStorage
+let countdownStart = localStorage.getItem("countdownStart");
+
+if (!countdownStart) {
+    // Se não houver nenhum registro, começa uma nova contagem
+    countdownStart = Date.now();
+    localStorage.setItem("countdownStart", countdownStart); // Salva a hora de início no localStorage
+}
+
+// Função para atualizar a contagem regressiva
 const y = setInterval(function() {
-    // Obtém a data e hora atuais
-    const now = new Date().getTime();
+    // Obtém o tempo atual
+    const now = Date.now();
 
-    // Calcula a diferença entre a data de término e a data atual
-    const distance = novaCountdownDate - now;
+    // Calcula a diferença entre o tempo atual e o início da contagem
+    let distance = countdownDuration - (now - countdownStart);
+
+    if (distance <= 0) {
+        // Se o tempo acabou, reinicia a contagem
+        countdownStart = Date.now();
+        localStorage.setItem("countdownStart", countdownStart); // Atualiza a hora de início no localStorage
+        distance = countdownDuration; // Reinicia a contagem para 48 horas
+    }
 
     // Cálculos para dias, horas, minutos e segundos
-    const novaDays = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const novaHours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const novaMinutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const novaSeconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Exibe os resultados na página
-    document.getElementById("nova-days").innerHTML = String(novaDays).padStart(2, '0');
-    document.getElementById("nova-hours").innerHTML = String(novaHours).padStart(2, '0');
-    document.getElementById("nova-minutes").innerHTML = String(novaMinutes).padStart(2, '0');
-    document.getElementById("nova-seconds").innerHTML = String(novaSeconds).padStart(2, '0');
-
+    document.getElementById("nova-days").innerHTML = String(days).padStart(2, '0');
+    document.getElementById("nova-hours").innerHTML = String(hours).padStart(2, '0');
+    document.getElementById("nova-minutes").innerHTML = String(minutes).padStart(2, '0');
+    document.getElementById("nova-seconds").innerHTML = String(seconds).padStart(2, '0');
 }, 1000);
 
 // 
@@ -118,7 +132,59 @@ function playVideo5() {
     document.querySelector('.video-thumbnail5').style.display = 'none'; 
   }
 
-// carrossel
+// scroll mudanças 
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".modulo-item");
+
+  const handleScroll = () => {
+    items.forEach((item) => {
+      const rect = item.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Ativa apenas se o item estiver centralizado (limite ajustável)
+      if (rect.top >= windowHeight * 0.50 && rect.bottom <= windowHeight * 0.64) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
+  };
+
+  // Escuta o evento de scroll
+  window.addEventListener("scroll", handleScroll);
+
+  // Verifica os itens iniciais ao carregar a página
+  handleScroll();
+});
+
+// 
+// 
+// 
+// scroll beneficios
+
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".beneficios-item");
+
+  const handleScroll = () => {
+    items.forEach((item) => {
+      const rect = item.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Ativa a classe 'active' quando o item está visível na tela
+      if (rect.top >= windowHeight * 0.25 && rect.bottom <= windowHeight * 0.55) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
+  };
+
+  // Escuta o evento de scroll
+  window.addEventListener("scroll", handleScroll);
+
+  // Verifica os itens iniciais ao carregar a página
+  handleScroll();
+});
 
 
 

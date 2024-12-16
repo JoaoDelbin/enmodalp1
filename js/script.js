@@ -1,47 +1,31 @@
-// Define a data e hora de término da contagem regressiva
+const countdownInterval = setInterval(function() {
+  // Obtém o tempo atual
+  const currentTime = Date.now();
 
-const countdownDate = new Date("Dec 16, 2024 23:59:59").getTime();
+  // Calcula a diferença entre o tempo atual e o início da contagem
+  let remainingTime = countdownDuration - (currentTime - countdownStart);
 
+  if (remainingTime <= 0) {
+      // Se o tempo acabou, reinicia a contagem
+      countdownStart = Date.now();
+      localStorage.setItem("countdownStart", countdownStart); // Atualiza a hora de início no localStorage
+      remainingTime = countdownDuration; // Reinicia a contagem para 48 horas
+  }
 
-// Atualiza a contagem regressiva a cada segundo
+  // Cálculos para dias, horas, minutos e segundos
+  const countdownDays = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+  const countdownHours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const countdownMinutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+  const countdownSeconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
-const x = setInterval(function() {
-
-
-    // Obtém a data e hora atuais
-
-    const now = new Date().getTime();
-
-
-    // Calcula a diferença entre a data de término e a data atual
-
-    const distance = countdownDate - now;
-
-
-    // Cálculos para dias, horas, minutos e segundos
-
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-    // Exibe os resultados na página
-
-    document.getElementById("days").innerHTML = String(days).padStart(2, '0');
-
-    document.getElementById("hours").innerHTML = String(hours).padStart(2, '0');
-
-    document.getElementById("minutes").innerHTML = String(minutes).padStart(2, '0');
-
-    document.getElementById("seconds").innerHTML = String(seconds).padStart(2, '0');
-
-
-
+  // Exibe os resultados na página
+  document.getElementById("days").innerHTML = String(countdownDays).padStart(2, '0');
+  document.getElementById("hours").innerHTML = String(countdownHours).padStart(2, '0');
+  document.getElementById("minutes").innerHTML = String(countdownMinutes).padStart(2, '0');
+  document.getElementById("seconds").innerHTML = String(countdownSeconds).padStart(2, '0');
 }, 1000);
+
+
 
 // thumbnail video 1 professora
 function playVideo() {
@@ -132,7 +116,9 @@ function playVideo5() {
     document.querySelector('.video-thumbnail5').style.display = 'none'; 
   }
 
+
 // scroll mudanças 
+
 document.addEventListener("DOMContentLoaded", () => {
   const items = document.querySelectorAll(".modulo-item");
 
@@ -141,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const rect = item.getBoundingClientRect();
       const windowHeight = window.innerHeight;
 
-      // Ativa apenas se o item estiver centralizado (limite ajustável)
+    
       if (rect.top >= windowHeight * 0.50 && rect.bottom <= windowHeight * 0.64) {
         item.classList.add("active");
       } else {
@@ -150,10 +136,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // Escuta o evento de scroll
+  
   window.addEventListener("scroll", handleScroll);
 
-  // Verifica os itens iniciais ao carregar a página
+  
   handleScroll();
 });
 
@@ -170,8 +156,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const rect = item.getBoundingClientRect();
       const windowHeight = window.innerHeight;
 
-      // Ativa a classe 'active' quando o item está visível na tela
-      if (rect.top >= windowHeight * 0.25 && rect.bottom <= windowHeight * 0.55) {
+  
+      if (rect.top >= windowHeight * 0.30 && rect.bottom <= windowHeight * 0.60) {
         item.classList.add("active");
       } else {
         item.classList.remove("active");
@@ -179,16 +165,71 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // Escuta o evento de scroll
+
   window.addEventListener("scroll", handleScroll);
 
-  // Verifica os itens iniciais ao carregar a página
+
   handleScroll();
 });
 
 
+// 
+// vermais texto professoras -600px
+// 
+
+function vermais() {
+  const pontos = document.getElementById('pontos');
+  const texto = document.getElementById('vermais');
+  const btnvermais = document.getElementById('btn-vermais');
+
+  if(pontos.style.display === 'none'){
+    pontos.style.display = 'inline';
+    texto.style.display = 'none';
+    btnvermais.innerHTML = 'Leia Mais';
+  } 
+  else {
+    pontos.style.display = 'none';
+    texto.style.display = 'inline';
+    btnvermais.innerHTML = 'Leia Menos';
+  }
+}
+// 
+// 
+
+function vermais2() {
+  const pontos = document.getElementById('pontos2');
+  const texto = document.getElementById('vermais2');
+  const btnvermais = document.getElementById('btn-vermais2');
+
+  if(pontos.style.display === 'none'){
+    pontos.style.display = 'inline';
+    texto.style.display = 'none';
+    btnvermais.innerHTML = 'Leia Mais';
+  } 
+  else {
+    pontos.style.display = 'none';
+    texto.style.display = 'inline';
+    btnvermais.innerHTML = 'Leia Menos';
+  }
+}
 
 
+// 
+// 
 
+function vermais3() {
+  const pontos = document.getElementById('pontos3');
+  const texto = document.getElementById('vermais3');
+  const btnvermais = document.getElementById('btn-vermais3');
 
-
+  if(pontos.style.display === 'none'){
+    pontos.style.display = 'inline';
+    texto.style.display = 'none';
+    btnvermais.innerHTML = 'Leia Mais';
+  } 
+  else {
+    pontos.style.display = 'none';
+    texto.style.display = 'inline';
+    btnvermais.innerHTML = 'Leia Menos';
+  }
+}

@@ -18,28 +18,21 @@
   margin-left: auto;
   margin-right: auto;
   overflow: scroll;
-  overflow-y:hidden;
+  overflow-y: hidden;
 }
 
-
-
-.bicicletas-lista li {
-  flex: 1;
-  min-width: 200px;
+.seta-carrossel {
+  display: none;
 }
 
-.bicicletas-lista a {
-  display: block;
-}
 
 
 /* videos */
+
 .dados {
   text-align: center;
   padding-top: 10px;
 }
-
-
 
 .video-thumbnail3,
 .video-thumbnail4,
@@ -70,7 +63,6 @@
   max-width: 640px;
   min-width: 330px;
   margin: 0 auto;
- 
 }
 
 .video3,
@@ -105,8 +97,31 @@
 }
 
 @media (max-width: 600px) {
-  .depoimentos-bg {
+
+  .container-seta {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .depoimento-video1,
+  .depoimento-video2,
+  .depoimento-video5 {
+    max-width: 640px;
+    min-width: 250px;
+  }
+  .seta-carrossel {
+    display: inline;
+    width: 35px;
+    height: 35px;
     
+  }
+  .carrossel {
+    gap: 20px;
+  }
+  .depoimentos-bg {
     padding-bottom: 80px;
   }
   .container-botao {

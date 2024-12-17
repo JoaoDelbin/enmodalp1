@@ -117,7 +117,7 @@ function playVideo5() {
   }
 
 
-// scroll mudanças 
+// scroll modulos
 
 document.addEventListener("DOMContentLoaded", () => {
   const items = document.querySelectorAll(".modulo-item");
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const windowHeight = window.innerHeight;
 
     
-      if (rect.top >= windowHeight * 0.50 && rect.bottom <= windowHeight * 0.64) {
+      if (rect.top >= windowHeight * 0.35 && rect.bottom <= windowHeight * 0.70) {
         item.classList.add("active");
       } else {
         item.classList.remove("active");
@@ -172,6 +172,32 @@ document.addEventListener("DOMContentLoaded", () => {
   handleScroll();
 });
 
+// scroll curso exclusivo
+// 
+
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".curso-item");
+
+  const handleScroll = () => {
+    items.forEach((item) => {
+      const rect = item.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Ativa apenas se o item estiver no meio da tela
+      if (rect.top >= windowHeight * 0.15 && rect.bottom <= windowHeight * 0.70) {
+        item.classList.add("active");
+      } else {
+        item.classList.remove("active");
+      }
+    });
+  };
+
+  // Escuta o evento de scroll
+  window.addEventListener("scroll", handleScroll);
+
+  // Verifica os itens iniciais ao carregar a página
+  handleScroll();
+});
 
 // 
 // vermais texto professoras -600px

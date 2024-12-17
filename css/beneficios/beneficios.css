@@ -48,7 +48,8 @@
   height: 100%; 
   border-radius: 0; 
   background-color: #ff2c64; 
-  transition: width 0.7s ease, height 0.7s ease;
+  transition: width 3s ease, height 5s ease;
+  z-index: -1;
 }
 
 .beneficios-item.active::after {

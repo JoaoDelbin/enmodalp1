@@ -7,22 +7,18 @@
  padding-bottom: 20px;
 }
 
-.dec-2 p {
-  position: relative; 
-  padding-left: 25px; 
+.lista-curso li {
+  padding: 20px 20px;
 }
 
-.dec-2 p::after {
-  content: "";
-  position: absolute;
-  left: 0; 
-  top: 50%; 
-  transform: translateY(-50%);
-  width: 5px; 
-  height: 5px; 
-  border-radius: 50%; 
-  background-color: #fff; 
+.curso-item.active {
+  background-color: #ff2c64; 
+  color: white; 
+  transition: background-color 3s ease, color 4s ease; 
+  padding: 20px 20px;
+  border-radius: 5px;
 }
+
 
 
 

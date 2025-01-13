@@ -17,8 +17,8 @@
   max-width: 1400px;
   margin-left: auto;
   margin-right: auto;
-  overflow: scroll;
-  overflow-y: hidden;
+  /* overflow: scroll; */
+  overflow-y: hidden; 
 }
 
 .seta-carrossel {
@@ -94,6 +94,13 @@
   background-size: contain;
   background-repeat: no-repeat;
   margin: 10% 85%;
+}
+
+@media (max-width: 1152px) {
+  .carrossel {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
 }
 
 @media (max-width: 600px) {

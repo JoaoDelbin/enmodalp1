@@ -41,4 +41,7 @@
 /* carreira e oferta 48hr*/
 @import "./carreira/carreira.css";
 /* perguntas */
-@import "./perguntas/perguntas.css"
+@import "./perguntas/perguntas.css";
+
+/* POP-UP */
+@import "./popup/popup.css";

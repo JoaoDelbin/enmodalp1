@@ -259,3 +259,18 @@ function vermais3() {
     btnvermais.innerHTML = 'Leia Menos';
   }
 }
+
+
+// POP-UP
+// carregamento
+
+window.onload = function() {
+  document.getElementById("popup").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
+}
+
+// fechar o pop-up
+function fecharPopup() {
+  document.getElementById("popup").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
+}

@@ -44,7 +44,7 @@
 }
 
 .botao.wpp-up {
-    
+    font-size: 3rem;
 
 }
 
@@ -52,3 +52,17 @@
     font-size: 30px;
     margin: 0;
 }
+
+@media (max-width: 800px) {
+    .botao.wpp-up {
+        font-size: 2.5rem;
+    
+    }
+    .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+    }
+   }

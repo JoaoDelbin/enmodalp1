@@ -1,0 +1,47 @@
+/* global */
+@import "./global/global.css";
+
+/* contagem e oferta*/
+@import "./contagem/contagem.css";
+@import "./contagem/contagem2.css";
+@import "./contagem/oferta.css";
+/* utilidades */
+@import "./utilidades/cores.css";
+@import "./utilidades/tipografia.css";
+@import "./utilidades/utilidades.css";
+
+/* formação */
+@import "./formacao/formacao.css";
+
+/* metodo */
+@import "./metodo/metodo.css";
+
+/* curso */
+@import "./curso/curso.css";
+
+/* maiorbr */
+@import "./maiorbr/maiorbr.css";
+
+/* feedback */
+@import "./feedback/feedback.css";
+
+/* depoimentos videos */
+@import "./depoimentos/depoimentos.css";
+/* modulos */
+@import "./modulos/modulos.css";
+/* beneficios */
+@import "./beneficios/beneficios.css";
+/* ferramentas */
+@import "./ferramentas/ferramentas.css";
+/* certificado */
+@import "./certificado/certificado.css";
+/* professores */
+@import "./professores/professores.css";
+
+/* carreira e oferta 48hr*/
+@import "./carreira/carreira.css";
+/* perguntas */
+@import "./perguntas/perguntas.css";
+
+/* POP-UP */
+@import "./popup/popup.css";

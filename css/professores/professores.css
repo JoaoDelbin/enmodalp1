@@ -20,7 +20,18 @@
   padding: 20px 20px;
 }
 
-.video-thumbnail,
+.video-thumbnail  {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-image: url("https://img.youtube.com/vi/dIk04P86ecw/hqdefault.jpg"); /* Miniatura do novo vídeo */
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .video-thumbnail2 {
   width: 100%;
   aspect-ratio: 16/9;
